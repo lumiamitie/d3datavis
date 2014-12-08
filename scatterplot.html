@@ -89,6 +89,11 @@ circle {
     .attr("y", function(d,i) {return y(d[1]);})
     .attr("fill",'white')
     .attr("class","label")
+    
+    //Label font size
+    d3.selectAll("text.label")
+    .style("font-size","16px");
+    
         </script>
       </body>
     </html>
