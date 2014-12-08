@@ -78,6 +78,8 @@ circle {
           .attr("r", function (d) { return z(d[2]); });
     
     //Label    
+    //g안에 들어있는 text가 axis에도 있기 때문에
+    //label은 class를 지정해준 다음에 속성 변경을 해야 할 것 같다
     g.selectAll("text")
     .data(data)
     .enter()
@@ -86,6 +88,7 @@ circle {
     .attr("x", function(d,i) {return x(d[0]);})
     .attr("y", function(d,i) {return y(d[1]);})
     .attr("fill",'white')
+    .attr("class","label")
         </script>
       </body>
     </html>
