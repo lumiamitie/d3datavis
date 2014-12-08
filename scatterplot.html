@@ -24,7 +24,7 @@ circle {
           <!-- /the chart goes here -->
         </div>
         <script type="text/javascript">
-        var data = [[5,3,8], [10,17,10], [15,4,2], [2,8,11], [8,7,6], [3,2,5]];
+        var data = [[5,3,8,"a"], [10,17,10,"b"], [15,4,2,"c"], [2,8,11,"d"], [8,7,6,"e"], [3,2,5,"f"]];
    
     var margin = {top: 20, right: 15, bottom: 60, left: 60}
       , width = 960 - margin.left - margin.right
@@ -38,7 +38,7 @@ circle {
     	      .domain([0, d3.max(data, function(d) { return d[1]; })])
     	      .range([ height, 0 ]);
     var z = d3.scale.linear()
-    		.domain([0, d3.max(data, function(d) {return d[0]; })])
+    		.domain([0, d3.max(data, function(d) {return d[2]; })])
     		.range([10, 40])
  
     var chart = d3.select('body')
