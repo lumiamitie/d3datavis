@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	</head>
+	
+	<body>
+		<script type = "text/javascript">
+			d3.xml("data/Triangletest2.svg", "image/svg+xml", function(xml){
+				document.body.appendChild(xml.documentElement);
+				
+				var trng = d3.selectAll("path")
+								.attr("class","poly")
+								.style("opacity", 0);
+								
+				trng.transition()
+					.delay(function(d,i){return i*50})
+					.style("opacity",1);
+				
+			});
+			
+		</script>
+	</body>
+</html>
