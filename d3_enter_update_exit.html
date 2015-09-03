@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>enter, update, exit</title>
+</head>
+
+<body>
+<div id="select">
+	<button value='data1'>data1</button>
+	<button value='data2'>data2</button>
+	<button value='data3'>data3</button>
+	<button value='data4'>data4</button>
+</div>
+<div id="chart"></div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+	<script>
+	var svg = d3.select("#chart")
+				.append("svg")
+				.attr("width",500)
+				.attr("height",500);
+
+	var data = {'data1':[10,20,30,40,50,60,70,80,90,100],
+				'data2':[50,55,60,65,70,75,80,85,90],
+				'data3':[40,20,30,80,10,25,90,45],
+				'data4':[5,100,15,70,35,90,25,75,45,50,100]};
+	
+	drawbar(data['data1']);
+		
+	d3.selectAll("button")
+		.on("click", function(){
+			var selectedData = this.value;
+			drawbar(data[selectedData])
+		})
+		
+	function drawbar(bardata) {
+		var bars = d3.select("svg")
+					.selectAll("rect")
+					.data(bardata);
+					
+		bars.enter()
+			.append("rect")
+			.attr("width", function(d){
+				return d;
+			})
+			.attr("height", 15)
+			.attr("x", 20)
+			.attr("y", function(d, i){
+				return	20 + i*20;
+			});
+			
+		bars.attr("width", function(d){
+			return d;
+		})
+		
+		bars.exit()
+			.remove();
+			
+	};
+	</script>
+</body>
+</html>
