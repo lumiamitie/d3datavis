@@ -1,0 +1,30 @@
+.bar_y path {
+	stroke: #ccc;	
+}
+
+.bar_x path {
+	stroke: #ccc;	
+}
+
+.bar_x text{
+	font-size: 10pt;
+}
+
+.bar_tips {
+	fill: #ccc;
+}
+
+.bar_axis .tick text {
+	fill: #aaa;
+}
+
+.bar_buzz_value {
+	font-size: 40pt;
+	font-weight: bold;
+	fill: #65c3df;
+}
+
+.bar_buzz_title {
+	font-size: 20pt;
+	fill: #ccc;
+}

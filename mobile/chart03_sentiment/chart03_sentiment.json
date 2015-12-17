@@ -1,0 +1,15 @@
+[{"date":"20151201","sentiment":"positive","value":7},
+{"date":"20151202","sentiment":"positive","value":29},
+{"date":"20151203","sentiment":"positive","value":7},
+{"date":"20151204","sentiment":"positive","value":47},
+{"date":"20151205","sentiment":"positive","value":35},
+{"date":"20151206","sentiment":"positive","value":12},
+{"date":"20151207","sentiment":"positive","value":46},
+{"date":"20151201","sentiment":"negative","value":11},
+{"date":"20151202","sentiment":"negative","value":22},
+{"date":"20151203","sentiment":"negative","value":20},
+{"date":"20151204","sentiment":"negative","value":32},
+{"date":"20151205","sentiment":"negative","value":29},
+{"date":"20151206","sentiment":"negative","value":16},
+{"date":"20151207","sentiment":"negative","value":9}
+] 

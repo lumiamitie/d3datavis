@@ -1,0 +1,46 @@
+.sentiment_pos{
+	fill: #65c3df;
+}
+
+.sentiment_pos circle{
+	stroke: white;
+	stroke-width: 3px;
+}
+
+.sentiment_neg{
+	fill: #ff6b6b;
+}
+
+.sentiment_neg circle{
+	stroke: white;
+	stroke-width: 3px;
+}
+
+
+
+.sentiment_y .tick line{
+	stroke: #aaa;
+}
+
+.sentiment_y path {
+	stroke: #aaa;
+}
+
+.sentiment_axis .tick text {
+	fill: #aaa;
+}
+
+.sentiment_title {
+	font-size : 20pt;
+	fill: #aaa;
+}
+
+.sentiment_title_value {
+	font-size : 60pt;
+	font-weight: bold;
+}
+
+.sentiment_slash {
+	fill: #aaa;
+	font-weight: normal;
+}
