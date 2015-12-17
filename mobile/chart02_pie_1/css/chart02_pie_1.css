@@ -1,0 +1,45 @@
+.pie_news {
+	fill: #c3a3ca;
+}
+
+.pie_blog {
+	fill: #ff9eb1;
+}
+
+.pie_community {
+	fill: #56c5d0;
+}
+
+.pie_twitter {
+	fill: #b9b9b9;
+}
+
+.pie_reply {
+	fill: #ffcd5b;
+}
+
+.pie_voc {
+	fill: #88c86f;
+}
+
+.pie_date{
+	fill: #bbb;
+}
+
+.pie_count_text{
+	fill: #bbb;
+	font-size: 8pt
+}
+
+.pie_title{
+	fill: #bbb;
+	font-size: 18pt;
+}
+
+.pie_legend text{
+	font-size: 10pt;
+}
+
+.pie_legend rect{
+	font-size: 10pt;
+}
