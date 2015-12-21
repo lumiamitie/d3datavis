@@ -1,0 +1,35 @@
+.network_line {
+	stroke-width: 1px;
+	stroke: #ccc;
+}
+
+.network_node_center {
+	fill: #30aec7;
+}
+
+.network_node_color1 {
+	fill: #59c1cc;
+}
+
+.network_node_color2 {
+	fill: #87cfe5;
+}
+
+.network_label {
+	fill: white;
+	
+	background-color : #ccc;
+}
+
+.network_dayweek {
+	font-size: 20pt;
+	cursor: pointer;
+}
+
+.network_selected {
+	
+}
+
+.network_unselected {
+	fill: #ccc;
+}
